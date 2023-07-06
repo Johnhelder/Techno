@@ -5,30 +5,28 @@
     "preco": 2999,
     "img": "./api/produtos/notebook/notebook.jpg"
   },
-
   {
-    "id": "smartphne",
-    "nome": "Smartphne",
-    "preco": 1998,
-    "img": "./api/produtos/smartphne/smartphne.jpg"
+    "id": "smartphone",
+    "nome": "Smartphone",
+    "preco": 1299,
+    "img": "./api/produtos/smartphone/smartphone.jpg"
   },
   {
     "id": "tablet",
     "nome": "Tablet",
-    "preco": 1781,
+    "preco": 899,
     "img": "./api/produtos/tablet/tablet.jpg"
   },
   {
     "id": "smartwatch",
     "nome": "Smartwatch",
-    "preco": 989,
+    "preco": 1199,
     "img": "./api/produtos/smartwatch/smartwatch.jpg"
   },
-
   {
     "id": "speaker",
     "nome": "Speaker",
-    "preco": 784,
+    "preco": 599,
     "img": "./api/produtos/speaker/speaker.jpg"
   }
 ]
