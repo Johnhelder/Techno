@@ -13,13 +13,23 @@
 
 <body>
   <div id="app">
-    <section class="produtos">
-      <div v-for="produto in produtos" :key="produto.id" class="produto">
-        <img :src="produto.img" :alt="produto.nome" class="produto_img" />
 
-        <div class="produto_info">
-          <span class="produto_preco">{{produto.preco}}</span>
-          <h2 class="produto_titulo">{{produto.nome}}</h2>
+    <section class="modal" v-if="produto">
+      <div class="modal_container">
+        <div class="modal_img">
+          <img src="produto.img" :alt="produto.nome"></img>
+        </div>
+      </div>
+      {{produto}}
+    </section>
+
+    <section class="produtos">
+      <div v-for="item in produtos" @click="fetchProduto(produto)" :key="produto.id" class="item">
+        <img :src="item.img" :alt="item.nome" class="produto_img" />
+
+        <div class="prduto_info">
+          <span class="produto_preco">{{item.preco | numeroPreco}}</span>
+          <h2 class="produto_titulo">{{item.nome}}</h2>
         </div>
       </div>
     </section>
