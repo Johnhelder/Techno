@@ -74,13 +74,18 @@ body{
 }
 
 .modal_container{
+  display: grid;
   position: relative;
   background: white;
   z-index: 1;
   display: grid;
+  align-items: flex-end;
+  grid-gap: 50px;
+  padding: 0 50px 50px 0px;
 }
 
 .modal_img{
+  grid-column: 1;
   margin-top: 50px;
 }
 
