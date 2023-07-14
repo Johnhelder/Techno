@@ -100,3 +100,22 @@ body{
   grid-column: 2;
   max-width: 600px;
 }
+
+.modal_titulo{
+  font-size: 3rem;
+}
+
+.modal_btn{
+  margin-top: 80px;
+  background: #000;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 25px;
+  font-family: "Noto Serif";
+}
+
+.avaliacoes{
+  grid-column: 2;
+}
