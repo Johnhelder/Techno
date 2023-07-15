@@ -1,4 +1,4 @@
-body, h1, h2, ul, li{
+body, h1, h2, ul, li, p{
   padding: 0px;
   margin: 0px;
 }
@@ -116,6 +116,21 @@ body{
   font-family: "Noto Serif";
 }
 
+.modal_btn:active{
+  background: #808080;
+}
+
+/*avaliacoes*/
+
 .avaliacoes{
   grid-column: 2;
+}
+
+.avaliacao_descricao{
+  color: rgba(0, 0, 0, .7);
+  margin: 20px 0 5px 0;
+}
+
+.avaliacao_usuario{
+  font-weight: bold;
 }
