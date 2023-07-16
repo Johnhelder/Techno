@@ -20,6 +20,7 @@
           <img :src="produto.img" :alt="produto.nome"></img>
         </div>
         <div class="modal_dados">
+          <button @click="produto = false" class="modal_fechar">X</button>
           <span class="modal_preco">{{produto.preco}}</span>
           <h2 class="modal_titulo">{{produto.nome}}</h2>
           <p>{{produtos.descricao}}</p>
@@ -28,7 +29,7 @@
         <div class="avaliacoes">
           <h2 class="avaliacoes_subtitulo">Avaliações</h2>
           <ul>
-            <li v-for="avaliacao in produto.avaliacoes">{{avaliacoes}}</li>
+            <li v-for="avaliacao in produto.avaliacoes" class="avaliacao">{{avaliacoes}}</li>
             <p>{{avaliacao.descricao}}</p>
             <p>{{avaliacao.nome}} | {{avaliacao.estrelas}} estrelas</p>
           </ul>
@@ -38,6 +39,10 @@
     </section>
 
     <section class="produtos">
+
+      <div v-for="produto in produtos" class="produto">
+
+      </div>
       <div v-for="produto in produtos" @click="fetchProduto(item.id)" :key="protudo.id" class="produto">
         <img :src="produto.img" :alt="produto.nome" class="produto_img" />
 
