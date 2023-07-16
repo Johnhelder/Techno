@@ -91,6 +91,19 @@ body{
   box-shadow: 0px 3xp 4px rgba(0, 0, 0, .1), 0px 4px 10px rgba(0, 0, 0, .2);
 }
 
+.modal_fechar{
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1rem;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0,.1), 0px 4px 10px rgba(0, 0, 0,.2);
+  cursor: pointer;
+}
+
 .modal_img img{
   max-width: 300px;
   display: block;
@@ -124,6 +137,15 @@ body{
 
 .avaliacoes{
   grid-column: 2;
+}
+
+.avaliacao{
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding-bottom: 20px;
+}
+
+.avaliacoes_subtitulo{
+  font-size: 1.75rem;
 }
 
 .avaliacao_descricao{
